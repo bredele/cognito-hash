@@ -1,0 +1,42 @@
+{
+  "name": "cognito-hash",
+  "version": "1.0.0",
+  "description": "Cognito base64-encoded HMAC SHA-256 hash.",
+  "main": "./dist/cjs/index.js",
+  "scripts": {
+    "test": "node --test dist/cjs/**/*.test.js",
+    "build": "cmplr --type-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/cognito-hash.git"
+  },
+  "keywords": [
+    "cognito",
+    "hash",
+    "secret",
+    "base64"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/cognito-hash/issues"
+  },
+  "homepage": "https://github.com/bredele/cognito-hash#readme",
+  "devDependencies": {
+    "cmplr": "^1.3.0",
+    "@types/node": "^24.2.0"
+  },
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ]
+}
